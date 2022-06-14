@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.25em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    padding-left: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav .logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    background-color: #B5DEFF;
+    padding: 60px 0 0 60px;
+}
+
+.title {
+    flex: 1;
+    padding: 0 0 60px 0;
+}
+
+.title button {
+    font-family: 'Poppins', Arial, sans-serif;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: #CAB8FF;
+    font-size: 1em;
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.section {
+    padding: 60px;
+}
+
+.about {
+    background-color: #FCFFA6;
+}
+
+.social-media-icons {
+    padding: 20px 0;
+}
+
+.social-media-icons a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.social-media-icons img {
+    width: 40px;
+}
+
+.portfolio {
+    background-color: #C1FFD7;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project {
+    margin: 0 15px 15px 0;
+}
+
+.project .project-img {
+    height: 250px;
+    width: 200px;
+    background-color: #95c4a6;
+}
+
+.project p {
+    margin: 5px 0 0 0;
+}
+
+.project .type {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 1120px) {
+    .section {
+        padding: 60px calc(60px + 50vw - 500px);
+    }
+
+    .header {
+        padding: 60px 0 0 calc(60px + 50vw - 500px);
+    }
+}
